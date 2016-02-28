@@ -4,7 +4,7 @@ UpToSky
 ============
 Bot Based On Yagop
 ----------------------
-Bot Working IN SUPERGROUPS
+_Bot Working IN SUPERGROUPS_
 ----------------------------
 MADE BY @THISISARMAN
                  @IAMJAVID
