@@ -6,8 +6,11 @@ Bot Based On Yagop
 ----------------------
 Bot Working IN SUPERGROUPS
 ----------------------------
-MADE BY @THISISARMAN
+MADE BY 
+      @THISISARMAN
+
                  @IAMJAVID
+                 
                        @UNFRIENDLY
                        
 
@@ -29,5 +32,8 @@ cd UPTOSKY
 
 Contact me
 ------------
-You can contact ARMAN [via Telegram](https://telegram.me/THISISARMAN) but if you have an issue please 
+You can contact ARMAN [via Telegram](https://telegram.me/THISISARMAN) 
+
 You can contact JAVID [via Telegram](https://telegram.me/IAmJavid)
+
+You can contact Amir [via Telegram](https://telegram.me/UnFriendly)
