@@ -7,10 +7,9 @@ Bot Based On Yagop
 Bot Working IN SUPERGROUPS
 ----------------------------
 MADE BY 
-      @THISISARMAN
 
+      @THISISARMAN
                  @IAMJAVID
-                 
                        @UNFRIENDLY
                        
 
