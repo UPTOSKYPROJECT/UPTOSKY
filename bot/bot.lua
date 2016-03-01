@@ -14,6 +14,8 @@ function on_msg_receive (msg)
     return
   end
 
+  msg = backward_msg_format(msg)
+
   local receiver = get_receiver(msg)
 
   -- vardump(msg)
@@ -46,7 +48,7 @@ function msg_valid(msg)
   -- Don't process outgoing messages
   if msg.out then
     print('\27[36mNot valid: msg from us\27[39m')
-    return false
+ --   return false
   end
 
   -- Before bot was started
@@ -72,7 +74,7 @@ function msg_valid(msg)
 
   if msg.from.id == our_id then
     print('\27[36mNot valid: Msg from our id\27[39m')
-    return false
+  --  return false
   end
 
   if msg.to.type == 'encr_chat' then
@@ -200,41 +202,6 @@ function load_config( )
   return config
 end
 
--- Create a basic config.json file and saves it.
-function create_config( )
-  -- A simple config with basic plugins and ourselves as privileged user
-  config = {
-    enabled_plugins = {
-      "9gag",
-      "eur",
-      "echo",
-      "btc",
-      "get",
-      "giphy",
-      "google",
-      "gps",
-      "help",
-      "id",
-      "images",
-      "img_google",
-      "location",
-      "media",
-      "plugins",
-      "channels",
-      "set",
-      "stats",
-      "time",
-      "version",
-      "weather",
-      "xkcd",
-      "youtube" },
-    sudo_users = {our_id},
-    disabled_channels = {}
-  }
-  serialize_to_file(config, './data/config.lua')
-  print ('saved config into ./data/config.lua')
-end
-
 function on_our_id (id)
   our_id = id
 end
@@ -272,6 +239,29 @@ function load_plugins()
   end
 end
 
+-- custom add
+function load_data(filename)
+
+	local f = io.open(filename)
+	if not f then
+		return {}
+	end
+	local s = f:read('*all')
+	f:close()
+	local data = JSON.decode(s)
+
+	return data
+
+end
+
+function save_data(filename, data)
+
+	local s = JSON.encode(data)
+	local f = io.open(filename, 'w')
+	f:write(s)
+	f:close()
+
+end
 -- Call and postpone execution for cron plugins
 function cron_plugins()
 
