@@ -30,7 +30,7 @@ cd UPTOSKY
 
 Contact me
 ------------
-You can contact ARMAN [via Telegram](https://telegram.me/THISISARMAN) 
+You can contact ARMAN [via Telegram](https://telegram.me/THiSiSARMAN) 
 
 You can contact JAVID [via Telegram](https://telegram.me/IAmJavid)
 
